@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>小小骑士 · 第一关</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #04060c;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", sans-serif;
+  }
+  #stage {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      radial-gradient(ellipse at 50% 42%, #101a2e 0%, #070b14 55%, #03040a 100%);
+  }
+  canvas#game {
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: #060a13;
+    box-shadow:
+      0 0 0 1px #1b2438,
+      0 0 60px rgba(60, 100, 180, 0.18),
+      0 24px 80px rgba(0, 0, 0, 0.8);
+    cursor: crosshair;
+  }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="game" width="480" height="270"></canvas></div>
+<script src="src/core/util.js"></script>
+<script src="src/core/input.js"></script>
+<script src="src/core/fx.js"></script>
+
+<script src="src/fx/elements.js"></script>
+
+<script src="src/entity/knight-sprite.js"></script>
+<script src="src/entity/player.js"></script>
+<script src="src/entity/spear.js"></script>
+<script src="src/entity/enemy.js"></script>
+
+<script src="src/world/world.js"></script>
+<script src="src/world/terrain.js"></script>
+<script src="src/world/reactions.js"></script>
+<script src="src/world/levels/level1.js"></script>
+<script src="src/world/levels/training.js"></script>
+
+<script src="src/ui/hints.js"></script>
+<script src="src/ui/menu.js"></script>
+<script src="src/ui/hud.js"></script>
+
+<script src="src/main.js"></script>
+
+<script src="src/dev/selftest.js"></script>
+<script src="src/dev/demo.js"></script>
+</body>
+</html>

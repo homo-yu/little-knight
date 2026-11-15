@@ -1,0 +1,20 @@
+# ---- 本地历史快照（体积大，git 本身就能记录历史） ----
+_v1_基线/
+_v2_第二版/
+
+# ---- 系统 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+._*
+
+# ---- 编辑器 ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- 临时 ----
+*.log
+_tmp*
+_debug.html
